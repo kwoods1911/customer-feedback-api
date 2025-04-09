@@ -33,6 +33,3 @@ This application was developed locally on ubuntu using SQlite. Below are instruc
     5. Run api locally:
          php artisan serve
 
-
-
-Testing can be done via postman.
