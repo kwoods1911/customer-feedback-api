@@ -1,19 +1,36 @@
 
-## Customer Feedback Module
+# Customer Feedback Module
+This is a lightweight Laravel API designed to collect and manage customer feedback submissions for lilyPadPOS.
 
-Development Set up Instructions
+
+## Requirements
+- PHP >= 8.1
+- Composer
+- Laravel 10+
+- SQLite or MySQL
+
+## Installation
 
 This application was developed locally on ubuntu using SQlite. Below are instructions to use sql in your environment.
 
-After cloning the repository follow the steps below.
+  git clone https://github.com/kwoods1911/customer-feedback-api.git
+   cd customer-feedback-
+   
+   1. Install dependencies run:
+         composer install
+   2. Copy and configure .env file:  
+         cp.env.example .env
+   3. Set the Sqlite database path in the .env: 
+         DB_CONNECTION=sqlite
+         DB_DATABASE=/absolute/path/to/database/database.sqlite
 
-1. In database directory of your customer-feedback-api create a file called database.sqlite
-2. Create .env file from the .env.example
-3. Set the environment variable DB_DATABASE= to the path of your database.sqlite file
+    4. Generate app key and migrate database:
+        php artisan key:generate
+        php artisan migrate   
 
-After configuring the .env files run the commands:
+    5. Run api locally:
+        php artisan serve
 
-composer install
-php artisan migrate:fresh
+
 
 Testing can be done via postman.
