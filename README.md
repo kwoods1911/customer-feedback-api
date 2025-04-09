@@ -18,8 +18,10 @@ This application was developed locally on ubuntu using SQlite. Below are instruc
    
    1. Install dependencies run:
          composer install
+         
    2. Copy and configure .env file:  
          cp.env.example .env
+
    3. Set the Sqlite database path in the .env: 
          DB_CONNECTION=sqlite
          DB_DATABASE=/absolute/path/to/database/database.sqlite
