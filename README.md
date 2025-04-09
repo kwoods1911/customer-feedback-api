@@ -13,25 +13,32 @@ This is a lightweight Laravel API designed to collect and manage customer feedba
 
 This application was developed locally on ubuntu using SQlite. Below are instructions to use sql in your environment.
 
-   1. **Clone the repository:**
+   ### 1. Clone the repository:
+
       ```bash
        git clone https://github.com/kwoods1911/customer-feedback-api.git
        cd customer-feedback-api
    
-  1. **Install dependencies run**:
+    ### 2.Install dependencies run:
+
+        ```bash
          composer install
 
-   2. **Copy and configure .env file**:  
+    ### 3. Copy and configure .env file:
+     ```bash
          cp.env.example .env
 
-    3. **Set the Sqlite database path in the .env**: 
+     ### 4. Set the Sqlite database path in the .env: 
+     ```bash
          DB_CONNECTION=sqlite
          DB_DATABASE=/absolute/path/to/database/database.sqlite
 
-    4. **Generate app key and migrate database**:
+     ### 5. Generate app key and migrate database:
+     ```bash
          php artisan key:generate
          php artisan migrate   
 
-    5. **Run api locally**:
+     ### 6. Run api locally:
+     ```bash
          php artisan serve
 
